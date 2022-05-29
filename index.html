@@ -155,13 +155,13 @@
             <input type="email" id="email" placeholder="email" required>
         </div>
         <div class="inputBox">
-            <input type="tel" placeholder="Nomor Telepon" id="phone" name="phone" pattern="[0][8][0-9]{9-12}" maxlength="14" required>
+            <input type="tel" placeholder="Nomor Telepon" id="nomor" name="nomor" pattern="[0]{1}[8]{1}[0-9]{1-12}" maxlength="14" required>
     <p>Choose an Event:</p>
     <select name="" placeholder="Your Event" id="pilevent" class="btn" required>
-        <option value="Event">Event 1</option>
-        <option value="Event">Event 2</option>
-        <option value="Event">Event 3</option>
-        <option value="Event">Event 4</option>
+        <option value="Event 1">Event 1</option>
+        <option value="Event 2">Event 2</option>
+        <option value="Event 3">Event 3</option>
+        <option value="Event 4">Event 4</option>
     </select>
         </div>
         <input type="submit" value="submit" class="btn">
@@ -188,7 +188,7 @@
             <input type="text" placeholder="subject">
         </div>
         <textarea name="" placeholder="your message" id="" cols="30" rows="10"></textarea>
-        <input type="submit" value="submit" class="btn">
+        <input type="submit" value="" class="btn">
     </form>
 
 </section>
@@ -234,11 +234,14 @@
 
 <!-- footer section ends -->
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
-
-<script src="script.js"></script>
 
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+
+<script type ="module" src="script.js"></script>
+
+
 
 
 

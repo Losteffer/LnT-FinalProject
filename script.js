@@ -11,25 +11,25 @@ const firebaseConfig = {
 
 firebase.initializeApp(firebaseConfig);
 
-let database = document.database().ref('register')
+let database = firebase.database().ref('register');
 
 
-const form = Document.querySelector('form');
+const form = document.querySelector('form');
 
 
-form.addEventListner('submit', function (event) {
+form.addEventListener('submit', function (event) {
   event.preventDefault
   const nama = document.querySelector('#nama').value;
   const email = document.querySelector('#email').value;
-  const nomor = document.querySelector('#phone').value;
-  const pilevent = document.querySelector('#pilevent').value;
+  const nomor = document.querySelector('#nomor').value;
+  const pil = document.querySelector('#pilevent').value;
 
   let newContact = database.push();
   newContact.set({
     nama: nama,
     email: email,
     nomor: nomor,
-    event: event,
+    pilihan: pil,
   });
 
 });
@@ -63,4 +63,5 @@ var swiper = new Swiper(".event-slider", {
     disableOnInteraction:false,
   }
 });
+
 
