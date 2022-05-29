@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LnT - Final Project</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    
+<!-- header section starts  -->
+
+<header class="header">
+
+    <a href="#" class="logo"><span>Pudding</span>Fest</a>
+
+    <nav class="navbar">
+        <a href="#home">Home</a>
+        <a href="#event">Event</a>
+        <a href="#contact">contact</a>
+    </nav>
+
+    <div id="menu-bars" class="fas fa-bars"></div>
+
+</header>
+
+<!-- header section ends -->
+
+<!-- home section starts  -->
+
+<section class="home" id="home">
+
+    <div class="content">
+        <h3>Who are we? <span>we are </span> <span>Pudding</span>Fest </h3>
+    </div>
+    <div class="row">
+        <div class="image">
+            <img src="images/home-img.jpg" alt="">
+        </div>
+        <div class="content">
+            <p> Kami merupakan event yang diadakkan setiap tahun yang di garap oleh PT Musang. Kami memamerkan teknologi-teknologi perbaru dari berbagai macam perusahaan ternama di Indonesia.
+            </p>
+        </div>
+    </div>
+
+</section>
+
+<!-- home section ends -->
+
+<!-- event section starts  -->
+
+<section class="event" id="event">
+
+    <h1 class="heading"> our <span>event</span> </h1>
+
+    
+
+    
+
+    <div class="swiper-container event-slider">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="images/slide-1.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="images/slide-2.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="images/slide-3.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="images/slide-4.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="images/slide-5.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="images/slide-6.jpg" alt=""></div>
+        </div>
+    </div>
+
+
+    <div class="box-container">
+
+        <div class="box">
+            <i class="fas fa-map-marker-alt"></i>
+            <h3>online venue </h3>
+            <p>Pameran ini akan diadakan secara online. </p>
+        </div>
+
+        <div class="box">
+            <i class="fas fa-envelope"></i>
+            <h3>invitation link</h3>
+            <p>Untuk mendapatkan link undangan, anda harus meregister di bawah.</p>
+        </div>
+
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title mb-5">Event Timeline</h4>
+        
+                        <div class="hori-timeline" dir="ltr">
+                            <ul class="list-inline events">
+                                <li class="list-inline-item event-list">
+                                    <div class="px-4">
+                                        <div class="event-date bg-soft-primary text-primary">9 July</div>
+                                        <h5 class="event-name">Event One</h5>
+                                        <p class="text-event">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id, optio.</p>
+                                        <div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-inline-item event-list">
+                                    <div class="px-4">
+                                        <div class="event-date bg-soft-success text-success">10 July</div>
+                                        <h5 class="event-name">Event Two</h5>
+                                        <p class="text-event">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non blanditiis nam sint!.</p>
+                                        <div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-inline-item event-list">
+                                    <div class="px-4">
+                                        <div class="event-date bg-soft-danger text-danger">16 July</div>
+                                        <h5 class="event-name">Event Three</h5>
+                                        <p class="text-event">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo porro, quasi commodi ipsum fugit. </p>
+                                        <div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-inline-item event-list">
+                                    <div class="px-4">
+                                        <div class="event-date bg-soft-warning text-warning">17 July</div>
+                                        <h5 class="event-name">Event Four</h5>
+                                        <p class="text-event">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam optio.</p>
+                                        <div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- end card -->
+            </div>
+        </div>
+
+    <h1 class="heading"> <span>Register</span> Now </h1>
+
+    <form action="submit">
+        <div class="inputBox">
+            <input type="text" id="nama" minlength="3" placeholder="name" required>
+            <input type="email" id="email" placeholder="email" required>
+        </div>
+        <div class="inputBox">
+            <input type="tel" placeholder="Nomor Telepon" id="phone" name="phone" pattern="[0][8][0-9]{9-12}" maxlength="14" required>
+    <p>Choose an Event:</p>
+    <select name="" placeholder="Your Event" id="pilevent" class="btn" required>
+        <option value="Event">Event 1</option>
+        <option value="Event">Event 2</option>
+        <option value="Event">Event 3</option>
+        <option value="Event">Event 4</option>
+    </select>
+        </div>
+        <input type="submit" value="submit" class="btn">
+    </form>
+
+</section>
+
+<!-- event section ends -->
+
+
+<!-- contact section starts  -->
+
+<section class="contact" id="contact">
+
+    <h1 class="heading"> <span>contact</span> us </h1>
+
+    <form action="">
+        <div class="inputBox">
+            <input type="text" placeholder="name">
+            <input type="email" placeholder="email">
+        </div>
+        <div class="inputBox">
+            <input type="tel" placeholder="Nomor Telepon">
+            <input type="text" placeholder="subject">
+        </div>
+        <textarea name="" placeholder="your message" id="" cols="30" rows="10"></textarea>
+        <input type="submit" value="submit" class="btn">
+    </form>
+
+</section>
+
+<!-- contact section ends -->
+
+<!-- footer section starts  -->
+
+<section class="footer">
+
+    <div class="box-container">
+
+
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="#"> <i class="fas fa-arrow-right"></i> home </a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> Event </a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> contact </a>
+        </div>
+
+        <div class="box">
+            <h3>contact info</h3>
+            <a href="#"> <i class="fas fa-phone"></i> 0813-8121-3352 </a>
+            <a href="#"> <i class="fas fa-envelope"></i> lnt@bncc.net </a>
+            <a href="#"> <i class="fas fa-envelope"></i> astro.luwes@binus.ac.id </a>
+            <a href="#"> <i class="fas fa-map-marker-alt"></i> Bina Nusantara Computer Club </a>
+        </div>
+
+        <div class="box">
+            <h3>follow us</h3>
+            <a href=""> <i class="fab fa-facebook-f"></i> facebook </a>
+            <a href=""> <i class="fab fa-twitter"></i> twitter </a>
+            <a href=""> <i class="fab fa-instagram"></i> instagram </a>
+            <a href=""> <i class="fab fa-linkedin"></i> linkedin </a>
+            <a href=""> <i class="fab fa-youtube"></i> youtube </a>
+        </div>
+
+    </div>
+
+    <div class="credit"> created by <span>Astro Luwes</a></span></div>
+
+</section>
+
+<!-- footer section ends -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+
+<script src="script.js"></script>
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+
+
+
+
+</body>
+</html>
